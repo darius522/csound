@@ -1170,6 +1170,14 @@ OENTRY opcodlst_1[] = {
     (SUBR)hw_channels},
    { "midiarp",   S(MIDIARP),0,  3,    "kk", "kO",
      midiarp_set, midiarp, NULL },
+    
+    
+    
+  /* @Darius: Personal Dev. */
+    
+  { "negate",  S(NEGATE), 0, 5, "a", "a", (SUBR)negateset, NULL, negate },
+  { "pvstochastic",  S(PVSSTOCH), 0, 5, "a", "aiiiii", (SUBR)pvstochasticset, NULL, pvstochastic },
+    
   /* terminate list */
   {  NULL, 0, 0, 0, NULL, NULL, NULL, NULL, NULL       }
 };

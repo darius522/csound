@@ -57,6 +57,8 @@
 #include "cs_par_ops.h"
 #include "ugtabs.h"
 #include "compile_ops.h"
+#include "negate.h"
+#include "pvstochastic.h"
 
 #define S(x)    sizeof(x)
 
@@ -463,3 +465,8 @@ int32_t losset_phs(CSOUND *, void *);
 int32_t loscil_phs(CSOUND *, void *);
 int32_t loscil3_phs(CSOUND *, void *);
 int32_t balance2(CSOUND *, void *);
+
+/* @Darius: Personal Dev. */
+
+int32_t negateset(CSOUND *, void *); int32_t negate(CSOUND *, void *);
+int32_t pvstochasticset(CSOUND *, void *); int32_t pvstochastic(CSOUND *, void *);

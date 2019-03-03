@@ -753,6 +753,11 @@ set(libcsound_SRCS
     OOps/midiops.c
     OOps/midiout.c
     OOps/mxfft.c
+
+    # /* @Darius: Personal Dev. */
+    OOps/negate.c
+    Opcodes/pvstochastic.c
+
     OOps/oscils.c
     OOps/pstream.c
     OOps/pvfileio.c
